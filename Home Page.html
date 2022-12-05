@@ -1,0 +1,87 @@
+<!-- IIT406-Computer Programming 3 -->
+<!-- By: Obiena, Matt David A. -->
+<!-- DA Student - DA2A -->
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">;
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">;
+	<title> Philippine Tourism </title>
+	<link rel="stylesheet" href="style.css">
+	<script>
+					function display_ct5() {
+					var x = new Date()
+					var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
+
+					var x1=x.getMonth() + 1+ "/" + x.getDate() + "/" + x.getFullYear(); 
+					x1 = x1 + " - " +  x.getHours( )+ ":" +  x.getMinutes() + ""  + ampm;
+					document.getElementById('ct5').innerHTML = x1;
+					display_c5();
+					 }
+					 function display_c5(){
+					var refresh=1000; // Refresh rate in milli seconds
+					mytime=setTimeout('display_ct5()',refresh)
+					}
+					display_c5()
+			</script>
+<span id='ct5' class="clock"></span>
+</head>
+<body>
+	<nav>
+	<ul>
+		<li><a href="Home Page.html" class="logo">
+		<img src = "COA Logo.png" alt="">
+		</a>
+		</li>
+		
+		<li><a href="About PH.html">
+		<i class="fa fa-home"></i>
+		<span class="nav-item">ABOUT PHILIPPINES</span>
+		</a></li>
+		
+		<li><a href="Tourist Att.html">
+		<i class="fa fa-plane"></i>
+		<span class="nav-item">TOURIST ATTRACTIONS</span>
+		</a></li>
+		
+		<li><a href="VG.html">
+		<i class="fa fa-bars"></i>
+		<span class="nav-item">VIDEO GALLERY</span>
+		</a></li>
+		
+		<li><a href="LI.html">
+		<i class="fa fa-male"></i>
+		<span class="nav-item">LOG IN</span>
+		</a></li>
+		
+		<li><a href="CU.html" class="cont">
+		<i class="fa fa-user"></i>
+		<span class="nav-item">CONTACT US</span>
+		</a></li>
+		
+		</ul>
+	</nav>
+
+	<div class="content">
+	<h1> EXPLORE THE WONDERS</h1>
+	<p> Take a Journey through the diverse tourist attractions in the country,<br> and explore how each one stands out to the tourism industry.</p>
+	</div>
+	
+	
+<footer id="footer">
+			<p>Copyright &copy MDAO 2022. All Rights Reserved.</p> 
+		<div class="footermenu">
+                     
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Tour</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">Log In</a></li>
+                        <li><a href="#">Contact</a></li>
+                      </ul>
+                    </div>
+                  
+
+</footer>
+	
+</body>
+</html>
